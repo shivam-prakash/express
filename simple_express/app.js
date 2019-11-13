@@ -9,6 +9,9 @@ app.get("/cat",function(req,res){
 app.get("/dog",function(req,res){
 	res.send("bow bow");
 });
+app.get("/home",function(req,res){
+	res.redirect("/");
+});
 app.listen(3000,function(){
 	console.log("server started");
 });
